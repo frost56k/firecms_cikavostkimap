@@ -11,6 +11,7 @@ import { UsersCollection } from "./collections/Users";
 import { TagsCollection } from "./collections/Tags"
 import { AchievementsCollection } from "./collections/Achievements"
 import { CommentsCollection } from "./collections/Comments";
+import { FeedbackCollection } from "./collections/Feedback"
 
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
@@ -73,7 +74,8 @@ export default function App() {
             UsersCollection,
             TagsCollection,
             AchievementsCollection,
-            CommentsCollection
+            CommentsCollection,
+            FeedbackCollection
         ]}
         firebaseConfig={firebaseConfig}
     />;
